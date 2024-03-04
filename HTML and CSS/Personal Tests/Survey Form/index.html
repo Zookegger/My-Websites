@@ -3,20 +3,22 @@
     <head>
         <meta charset="UTF-8">
         <title>User Stories Survey Form</title>
-        <link rel="stylesheet" href="styles.css"/>
+        <link rel="stylesheet" href="styles.css">
     </head>
     <body>
         <div class="title">
             <h1 id="title">My Journey</h1>
             <p id="description">A place to share your stories...</p>
         </div>
+        
         <form id="survey-form">
             <div class="fieldset_container">
                 <!-- Get Basic infomations -->
                 <fieldset>
-                    <label id="name-label" for="name" >Name <input type="text" id="name" placeholder=" Enter your name" required/></label>
-                    <label id="email-label" for="email">Email <input type="email" id="email" placeholder=" Enter your Email" required></label>
-                    <label id="number-label" for="number">Age (Optional) <input type="number" id="number" min="13" max="125" placeholder=" Enter your age"/></label>
+                    <legend>Tell us about you</legend>
+                    <label id="name-label" for="name" >Name <input type="text" id="name" placeholder="Enter your name" required></label>
+                    <label id="email-label" for="email">Email <input type="email" id="email" placeholder="Enter your Email" required></label>
+                    <label id="number-label" for="number">Age (Optional) <input type="number" id="number" min="13" max="125" placeholder="Enter your age"></label>
                     <label>Which Option describe your current role?</label>
                         <select id="dropdown">
                             <option value="" disabled selected>Select Current Role</option>
@@ -29,17 +31,23 @@
                 </fieldset> 
                 <!-- Get story -->
                 <fieldset class="inline">
+                    <legend>Is this your experience or someone else?</legend>
                     <div>
-                        <legend class="experience" for="exp">Is this your experience or someone else?</legend>
                         <label for="personal"><input class="inline" type="radio" id="personal" name="exp" value="personal" checked> Personal Experience</label>
                         <label for="secondhand"><input class="inline" type="radio" id="secondhand" name="exp" value="secondhand"> Secondhand Experience</label>
                     </div>
-                    <div>
-                        <legend class="story">Tell your story</legend>
-                        <textarea id="story" name="story" rows="15"cols="70" placeholder="I am ..."></textarea>
+                </fieldset>
+                
+                <fieldset class="inline">
+                    <legend>Tell your story</legend>
+                    <div class="container">
+                        <textarea id="story" name="story" rows="15" cols="70" placeholder="I am ..."></textarea>
                     </div>
+                </fieldset>
+
+                <fieldset class="inline">
+                    <legend>How did you heard of us?</legend>
                     <div>
-                        <legend class="media">How did you heard of us?</legend>
                         <label for="youtube"><input class="inline" type="checkbox" id="youtube" name="media" value="youtube"> Youtube</label>
                         <label for="facebook"><input class="inline" type="checkbox" id="facebook" name="media" value="facebook"> Facebook</label>
                         <label for="twitter"><input class="inline" type="checkbox" id="twitter" name="media" value="twitter"> Twitter</label>
@@ -49,7 +57,7 @@
                     <div>
                         <input id="submit" type="submit" value="Submit">
                     </div>
-                </fieldset>   
+                </fieldset>
             </div> 
         </form>
     </body>
