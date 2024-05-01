@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Button Script</title>
+        <style>
+            body {
+                background-color: cyan;
+            }
+            .flex-container {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+            }
+            
+            .container {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                flex-direction: column;
+                border: 1px solid black;
+            }
+            
+            button{
+                border: 0;
+                padding: 20px;
+                box-shadow: 3px 3px 0px;
+                border-radius: 8px;
+            }
+            
+            button:hover {
+                background-color: grey;
+                cursor: pointer;
+            }
+            
+            button:active {
+                background-color: darkgrey;
+            }
+            
+            .display {
+                background-color: black;
+                width: 260px;
+                padding: 20px;
+                color: white;
+                min-height: 30px;
+                margin: 0px;
+            }
+            
+            .phone-buttons{
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                background-color: grey;
+                max-width: 300px;;
+            }
+            .phone-buttons button {
+                flex-basis: calc(33.3% - 10px); /* Each button will take up approximately one-third of the container width */
+                margin: 5px; /* Add margin between buttons */
+                font-size: 18px;
+                
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="flex-container">
+            <h1>WELCOME TO MY WEBSITE</h1>
+                <div class='container'>
+                    
+                <p class="display"><span id="counter"> </span></p>
+                <div class="phone-buttons">
+                    <button id="1">1</button>
+                    <button id="2">2</button>
+                    <button id="3">3</button>
+                    <button id="4">4</button>
+                    <button id="5">5</button>
+                    <button id="6">6</button>
+                    <button id="7">7</button>
+                    <button id="8">8</button>
+                    <button id="9">9</button>
+                    <button id="0">0</button>
+                    <button id="backspace"><-</button>
+                </div>
+                    
+                <script>
+                    let phoneNumber = '';
+                    const buttons = document.querySelectorAll('.phone-buttons button');
+                    const display = document.querySelector('.display span');
+                    
+                    buttons.forEach(button => {
+                        button.addEventListener('click', function(){
+                            if (button.innerText === '<-') {
+                                // Remove the last character from the phone number if there is any
+                                phoneNumber = phoneNumber.slice(0, -1);
+                            }else{
+                                phoneNumber += button.innerText;
+                            }
+                            display.innerText = phoneNumber;
+                        });
+                    });
+                </script>
+            </div>
+        </div>
+    </body>
+</html>
