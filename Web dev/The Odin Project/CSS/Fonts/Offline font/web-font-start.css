@@ -1,0 +1,53 @@
+@font-face {
+    font-family: 'Cousine Nerd Font Mono Regular';
+    src: 
+        url("fonts/Cousine\ Mono\ kit/CousineNFM-Regular.woff"),
+        url("fonts/Cousine\ Mono\ kit/CousineNFM-Regular.woff2");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cousine-Nerd-Font-Mono-Bold';
+    src:
+        url("fonts/Cousine\ Mono\ kit/CousineNFM-Bold.woff"),
+        url("fonts/Cousine\ Mono\ kit/CousineNFM-Bold.woff2");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* General setup */
+
+html {
+	font-size: 10px;
+	margin: 0;
+	font-family: 'Cousine Nerd Font Mono Regular', sans-serif; 
+}
+
+body {
+	width: 80%;
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+/* Typography */
+
+h1 {
+	font-size: 3.2rem;
+}
+
+h2 {
+	font-size: 2.4rem;
+}
+
+h1, h2 {
+    font-family: 'Cousine-Nerd-Font-Mono-Bold';
+}
+
+p {
+	font-size: 1.4rem;
+	line-height: 1.6;
+	word-spacing: 0.6rem;
+}

@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font: 1.2em / 1.5 sans-serif;
+}
+
+.container p:first-child {
+    font-size: 150%;
+}
+
+.container p:first-child:first-line {
+    color: red;
+}
+
+a {
+    color: orange
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:visited {
+    color: green;
+}
+
+table {
+    border-collapse: collapse;
+    width: 300px;
+}
+
+td, th {
+    padding: 0.2em;
+    text-align: left;
+}
+
+tr:nth-of-type(even) {
+    background-color: #333;
+    color: white;
+}

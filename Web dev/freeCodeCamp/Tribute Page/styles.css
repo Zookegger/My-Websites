@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+main > h1 {
+    font-size: 2.3rem;
+    top: 0;
+    padding: 24px 0;
+    text-align: center;
+    text-wrap: wrap;
+}
+
+figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    padding-top: 10px;
+    max-width: 100%;
+    width: 60%;
+    height: auto;
+}
+
+#portrait figure > figcaption{
+   padding: 10px 0;
+   font-style: italic;
+   font-size: 1.4rem;
+}
+
+fieldset {
+    margin: 14px;
+    padding: 0;
+    border: 0;
+}
+
+#portrait {
+    background-color: #ffffff;
+    margin: auto 8%;
+}
+
+main {
+    background-color: #eee;
+}
+
+.quote, .appreciation {
+    display: block;
+    text-align: center;
+}
+
+p, #timeline {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 18px 18px;
+}
+
+p {
+    font-size: 1.3rem;
+    text-align: justify;
+    text-wrap: wrap;
+    line-height: 1.5;
+}
+
+.appreciation {
+    padding-bottom: 28px;
+    border-bottom: 2px solid #505050;
+}
+
+#timeline .year-label {
+    font-size: 2.5rem;
+    margin: 1rem 0;
+    font-weight: bold;
+}
+
+#timeline h3 {
+    font-size: 2rem;
+}
+
+#timeline ul {
+    padding: 2px 10px 2px 20px;
+}
+
+#timeline li{
+    padding: 8px 0;
+    margin: 4px 0;
+    font-size: 1.25rem;
+    text-align: justify;
+    line-height: 1.75;
+}
+
+footer {
+    font-size: 1.4em;
+    text-align: center;
+    margin-bottom: 10px;
+}

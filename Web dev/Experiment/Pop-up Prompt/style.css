@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+html, body {
+    height: 100%;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(104, 103, 103);
+    margin: 0 auto;
+    font-family: Arial;
+}
+
+.modal{
+    background-color: white;
+    display: flex;
+    width: 480px;
+    border-radius: 10px;
+    padding: 16px;
+    gap: 10px;
+    box-shadow: 2px 4px 16px rgba(0, 0, 0, .2);
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.icon {
+    display: flex;
+    background-color: lavender;
+    font-size: 30px;
+    color: blue;
+    width: 42px;
+    height: 42px;
+    text-align: center;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+button {
+    cursor: pointer;
+    padding: 10px;
+    border: 0px solid;
+    border-radius: 12px;
+    font-weight: 600;
+}
+
+button.close-button{
+    display: flex; 
+    border-radius: 50%;
+    color: #888;
+    font-weight: 400;
+    font-size: 16px;
+    height: 24px;
+    width: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #eee;
+    padding: 0;
+    cursor: pointer;
+}
+.close-button:hover{
+    background: #757575;
+    color: white;
+}
+
+button.continue {
+    background: rgba(66, 69, 248, 0.925);
+    color: white;
+    margin-right: 8px;
+}
+
+button.continue:hover{
+    margin: -2px 6px -2px -2px;
+    padding: 12px;
+}
+
+button.cancel{
+    background: rgba(256, 256 , 256, .8);
+    color:rgba(66, 69, 248, 0.925);
+    border: 1px solid rgba(49, 49, 49, 0.308);
+}
+
+button.cancel:hover{
+    margin: -2px -2px;
+    padding: 12px;
+}
+
+.text {
+    margin: 10px 0;
+}

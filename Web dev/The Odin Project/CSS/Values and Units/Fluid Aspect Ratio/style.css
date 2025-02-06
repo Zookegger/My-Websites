@@ -1,0 +1,26 @@
+/* The height/width ratio for our video */
+body {
+  --ratio: 360 / 640;
+}
+
+/* Full-width video  */
+.full-width {
+  /* width: 100vw; // we know it will be full-width */
+  height: calc(100vw * var(--ratio));
+}
+
+/* Constrained */
+.max-width {
+  --container-width: 30em;
+  
+  height: calc(100vw * var(--ratio));
+  max-height: calc(var(--container-width) * var(--ratio));
+
+  width: 100%;
+  max-width: var(--container-width);  
+}
+
+iframe {
+  display: block;
+  margin: 0 auto 1em;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classes</title>
+    <style>
+        [class^="thunder"] {
+            color: red;
+        }
+
+        input[type="text"] {
+            border: 2px solid red;
+            
+            outline: none;
+        }
+
+        input[type="text"]:hover {
+            border: 5px solid black;
+        }
+        
+        input[type="text"]:active {
+            border: 10px dashed aqua;
+        }
+        
+        input[type="text"]:focus {
+            border: none;
+        }
+
+        .thunder:nth-child(2n){
+            color: green;
+        }
+
+        .container > p {
+            color: green;
+        }
+        
+        /*
+        .container p {
+            color: green;
+        }
+        */
+    </style>
+</head>
+
+<body>
+    <div class="cloud">
+        <div class="thunder">a</div>
+        <div class="thunder">b</div>
+        <div class="thunder">c</div>
+        <div class="thunder">d</div>
+        <div class="thunder">e</div>
+    </div>
+
+    <input type="text" name="TextHolder1" id="1">
+    <input type="text" name="TextHolder2" id="2">
+    <input type="text" name="TextHolder3" id="3">
+    <input type="text" name="TextHolder4" id="4">
+
+    <div class="container">
+        <p>Direct child paragraph.</p>
+        <div>
+            <p>Nested paragraph.</p>
+        </div>
+        <p>Direct child paragraph.</p>
+    </div>
+</body>
+
+</html>

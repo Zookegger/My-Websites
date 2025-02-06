@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font: 1.2em / 1.5 sans-serif
+    /* 
+        font-size: 1.2em;
+        line-height: 1.5;
+        font-family: sans-serif;
+    */
+}
+
+h1 {
+    color: blue;
+}
+
+h2 {
+    background-color: blue;
+    color: white;
+}
+
+span {
+    font-size: 200%;
+}

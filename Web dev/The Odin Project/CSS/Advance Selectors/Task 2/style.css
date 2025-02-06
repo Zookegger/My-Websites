@@ -1,0 +1,19 @@
+body {
+    font: 1.2em / 1.5 sans-serif;
+}
+
+.alert {
+    border: 2px solid grey;
+}
+
+span.stop {
+    background-color: red;
+}
+
+h2#special {
+    background-color: yellow;
+}
+
+span.go {
+    background-color: green;
+}

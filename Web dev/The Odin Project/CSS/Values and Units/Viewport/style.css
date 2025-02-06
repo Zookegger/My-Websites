@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    display: grid;
+    grid-template-areas: 'header header'
+                         'nav main'
+                         'footer footer';
+    grid-template-columns: minmax(auto, 12em) 5fr;
+    grid-template-rows: auto 1fr auto;
+}
+
+h1 {
+    grid-area: header;
+}
+
+nav {
+    grid-area: nav;
+}
+
+article {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+    font-size: 20px;
+    text-align: center;
+}
+
+h1, footer {
+    background-color: lightgrey;
+}
+
+nav {
+    border-right: 1px solid lightgrey;
+}
+
+nav, article {
+    overflow-y: auto;
+}
+
+ul {
+    padding: 10px 0 0 18px;
+}
+
+li {
+    margin: 5px 0;
+}
+
+h1, nav, article, footer {
+    padding: 1rem;
+}

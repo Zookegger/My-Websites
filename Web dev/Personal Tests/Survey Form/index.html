@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>User Stories Survey Form</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="title">
+            <h1 id="title">My Journey</h1>
+            <p id="description">A place to share your stories...</p>
+        </div>
+        
+        <form id="survey-form">
+            <div class="fieldset_container">
+                <!-- Get Basic infomations -->
+                <fieldset>
+                    <legend>Tell us about you</legend>
+                    <label id="name-label" for="name" >Name <input type="text" id="name" placeholder="Enter your name" required></label>
+                    <label id="email-label" for="email">Email <input type="email" id="email" placeholder="Enter your Email" required></label>
+                    <label id="number-label" for="number">Age (Optional) <input type="number" id="number" min="13" max="125" placeholder="Enter your age"></label>
+                    <label>Which Option describe your current role?</label>
+                        <select id="dropdown">
+                            <option value="" disabled selected>Select Current Role</option>
+                            <option value="1">Student</option>
+                            <option value="2">Part-time Worker</option>
+                            <option value="3">Full-time Worker</option>
+                            <option value="4">Prefer not to say</option>
+                            <option value="5">Other</option>
+                        </select>
+                </fieldset> 
+                <!-- Get story -->
+                <fieldset class="inline">
+                    <legend>Is this your experience or someone else?</legend>
+                    <div>
+                        <label for="personal"><input class="inline" type="radio" id="personal" name="exp" value="personal" checked> Personal Experience</label>
+                        <label for="secondhand"><input class="inline" type="radio" id="secondhand" name="exp" value="secondhand"> Secondhand Experience</label>
+                    </div>
+                </fieldset>
+                
+                <fieldset class="inline">
+                    <legend>Tell your story</legend>
+                    <div class="container">
+                        <textarea id="story" name="story" rows="15" cols="70" placeholder="I am ..."></textarea>
+                    </div>
+                </fieldset>
+
+                <fieldset class="inline">
+                    <legend>How did you heard of us?</legend>
+                    <div>
+                        <label for="youtube"><input class="inline" type="checkbox" id="youtube" name="media" value="youtube"> Youtube</label>
+                        <label for="facebook"><input class="inline" type="checkbox" id="facebook" name="media" value="facebook"> Facebook</label>
+                        <label for="twitter"><input class="inline" type="checkbox" id="twitter" name="media" value="twitter"> Twitter</label>
+                        <label for="instagram"><input class="inline" type="checkbox" id="instagram" name="media" value="instagram"> Instagram</label>
+                        <label for="other"><input class="inline" type="checkbox" id="other" name="media" value="other"> Other</label>
+                    </div>
+                    <div>
+                        <input id="submit" type="submit" value="Submit">
+                    </div>
+                </fieldset>
+            </div> 
+        </form>
+    </body>
+</html>

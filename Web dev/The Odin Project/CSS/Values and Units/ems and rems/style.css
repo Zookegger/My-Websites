@@ -1,0 +1,13 @@
+html {
+    font-size: 16px;
+}
+
+/* em unit means "my parent element's font-size" */
+.ems li {
+    font-size: 1.3em;
+}
+
+/* rem unit means "my root element's font size" (<html> element) */
+.rems li {
+    font-size: 1.3rem;
+}
